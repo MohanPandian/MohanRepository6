@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="5" parallel="tests">  
+
+<listeners>
+	  <listener class-name="utility.ExtentReport" />
+</listeners> 
+
+<test thread-count="5" name="Test">
+
+ <parameter name="os" value="Windows"/>
+ <parameter name="browser" value="chrome"/>
+
+<classes>
+      <!--<class name="testcases.TestCase1HomePage"/>
+      <class name="testcases.TestCase2ActiveBundleUsage"/>
+      <class name="testcases.Testcase3ActivebundleDDT"/>
+      <class name="testcases.TestCase4BundleUsageDetails"/>      
+      <class name="testcases.TestCase5CallHistory"/>-->
+</classes>
+
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
